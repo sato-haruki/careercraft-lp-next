@@ -1,15 +1,154 @@
 .header {
-    width: 100%;
-    max-width: 600px;
+  width: 100%;
+  max-width: 600px;
+  height: 100px;
+  z-index: 999;
 }
-
+  
 .header__inner {
-    display: flex;
-    justify-content: space-between;
-    width: 90%;
-    margin: 0 auto;
+  display: flex;
+  align-items: center;
+  height: inherit;
+  justify-content: space-between;
+  max-width: 600px;
+  width: 90%;
+  margin: 0 auto;
+}
+  
+.header__inner.is-scrolled {
+  background-color: #ffffff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  transition: .3s ;
 }
 
 .careercraftLogo {
     display: flex;
+    align-items: center;
 }
+  
+.header__title__text {
+  margin: 8px 0 0 2px;
+  width: 190px;
+  height: 38px;
+  font-size: 34px;
+  background: linear-gradient(
+    40deg,
+    rgba(12, 92, 174, 1) 0%,
+    rgba(71, 185, 159, 1) 100%
+  );
+  -webkit-background-clip: text !important;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-fill-color: transparent;
+  font-family: "Noto Sans JP-Black", Helvetica;
+  font-weight: 800;
+  color: transparent;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+  
+.header__title img {
+  display: block;
+  width: 54px;
+  height: 100%;
+}
+
+.header__nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: translateX(100%);
+  background-color: #fff;
+  transition: transform .4s ease, opacity .2s ease;
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+  overflow: hidden;
+  z-index: 9999;
+  will-change: transform;
+}
+
+.nav__items {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 0;
+  font-family: "Noto Sans JP-Black", Helvetica;
+}
+
+.navItems__item a {
+  color: black;
+  width: 100%;
+  display: block;
+  text-align: center;
+  font-size: 20px;
+  margin-bottom: 24px;
+}
+
+.navItems__item:last-child a {
+  margin-bottom: 0;
+}
+
+.header__hamburger {
+  width: 48px;
+  height: 100%;
+}
+
+.hamburger {
+  background-color: transparent;
+  border-color: transparent;
+  z-index: 9999;
+}
+
+.hamburger span {
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(
+    40deg,
+    rgba(12, 92, 174, 1) 0%,
+    rgba(71, 185, 159, 1) 100%
+  );
+  position: relative;
+  transition: ease .4s;
+  display: block;
+}
+
+.hamburger span:nth-child(1) {
+  top: 0;
+}
+
+.hamburger span:nth-child(2) {
+  margin: 8px 0;
+}
+
+.hamburger span:nth-child(3) {
+  top: 0;
+}
+
+/* ハンバーガーメニュークリック後のスタイル */
+.header__nav.active {
+  transform: translateX(0);
+  visibility: visible;
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.hamburger.active span:nth-child(1) {
+  top: 5px;
+  transform: rotate(45deg);
+}
+
+.hamburger.active span:nth-child(2) {
+  opacity: 0;
+
+}
+
+.hamburger.active span:nth-child(3) {
+  top: -15px;
+  transform: rotate(-45deg);
+} 

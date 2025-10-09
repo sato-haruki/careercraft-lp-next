@@ -6,8 +6,19 @@
 a {
   color: inherit;
   text-decoration: none;
+
+}
+
+li {
+  list-style: none;
+}
+
+html {
+  background-color: #ffffff;
 }
 
 body {
   background-color: #ddedf8;
+  max-width: 600px;
+  margin: 0 auto;
 }
