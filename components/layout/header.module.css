@@ -1,0 +1,15 @@
+.header {
+    width: 100%;
+    max-width: 600px;
+}
+
+.header__inner {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.careercraftLogo {
+    display: flex;
+}
