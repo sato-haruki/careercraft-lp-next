@@ -1,0 +1,100 @@
+.hero {
+    position: relative;
+    &__heading {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        z-index: 5;
+        top: 28%;
+
+        &__text {
+            background: linear-gradient(88deg, rgba(12, 92, 174, 1) 0%, rgba(71, 185, 159, 1) 100%);
+            color: #ffffff;
+            font-size: 40px;
+            padding: 10px 20px;
+            margin: 0 0 10px 0;
+            display: inline-block;
+            width: fit-content;
+            align-self: flex-start;
+            @media screen and (max-width: 475px) {
+                font-size: 28px;
+                padding: 8px 14px;
+            }
+        }
+    }
+    
+    &__bg {
+      position: relative;
+  
+      &__woman__img {
+        // position: absolute;
+        // left: 0;
+        // top: 0;
+        position: relative;
+        z-index: 1;
+        width: 96%;
+        height: auto;
+      }
+  
+      &__man__img {
+        position: relative;
+        display: block;
+        margin: -60px 0 0 auto;
+        z-index: 1;
+        width: 90%;
+        height: auto;
+      }
+
+      &__cloud__img1 {
+        position: absolute;
+        top: -80px;
+        right: 0;
+        z-index: 0;
+        width: 68%;
+        height: auto;
+      }
+
+      &__cloud__img2 {
+        position: absolute;
+        bottom: -58px;
+        left: 0;
+        z-index: 0;
+        width: 66%;
+        height: auto;
+      }
+    }
+  
+    &__detail {
+      text-align: center;
+      margin: 38px 0 0 0;
+  
+      &__text1 {
+        font-size: 36px;
+        background: linear-gradient(40deg, rgba(12, 92, 174, 1) 0%, rgba(71, 185, 159, 1) 100%);
+        -webkit-background-clip: text !important;
+        -webkit-text-fill-color: transparent;
+        font-weight: 900;
+        @media screen and (max-width: 475px) {
+            font-size: 28px;
+        }
+      }
+
+      &__text2 {
+        font-size: 28px;
+        font-weight: 600;
+        margin: 0 0 0 4px;
+        @media screen and (max-width: 475px) {
+            font-size: 20px;
+        }
+      }
+
+      &__text3 {
+        font-size: 28px;
+        font-weight: 600;
+        @media screen and (max-width: 475px) {
+            font-size: 20px;
+        }
+      }
+    }
+  }
+  
