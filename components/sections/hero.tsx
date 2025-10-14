@@ -5,7 +5,6 @@ import CtaButton from "@/components/ui/ctaButton";
 export default function Hero() {
 
   return (
-    <>
       <section className={styles.hero}>
         <h2 className={styles.hero__heading}>
           <span className={styles.hero__heading__text}>キャリアを変える</span>
@@ -49,6 +48,5 @@ export default function Hero() {
         </p>
         <CtaButton/>
       </section>
-    </>
   );
 }
