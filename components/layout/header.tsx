@@ -2,7 +2,7 @@
 
 import { useEffect, useRef } from "react";
 import Image from "next/image";
-import styles from "./header.module.css";
+import styles from "./header.module.scss";
 
 export default function Header() {
   const navRef = useRef<HTMLElement | null>(null);
