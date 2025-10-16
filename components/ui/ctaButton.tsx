@@ -4,7 +4,6 @@ import styles from "./ctaButton.module.scss";
 export default function CtaButton() {
 
   return (
-    <>
       <a href="#" className={styles.cta}>
         <div className={styles.cta__contents}>
             <Image
@@ -18,6 +17,5 @@ export default function CtaButton() {
             <span className={styles.cta__contents__decoration}>＞</span>
         </div>
       </a>
-    </>
   );
 }

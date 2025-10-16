@@ -7,7 +7,7 @@ import styles from "./course.module.scss";
 type CourseType = {
   courseName: string;
   color: string;
-  gradient: string; // 追加：heading用グラデーション
+  gradient: string;
   title: string;
   price: string;
   features: string[];
@@ -107,10 +107,9 @@ export default function Course() {
   const selectedCourse = coursesSelect[selectedIndex];
 
   return (
-    <section className={styles.course}>
+    <section className={styles.course} id="course">
       <h2 className={styles.course__heading}>コース紹介＆料金</h2>
 
-      {/* コース選択ボタン */}
       <div className={styles.course__select}>
         <ul className={styles.course__list}>
           {coursesSelect.map((course, index) => (
@@ -129,13 +128,12 @@ export default function Course() {
         </ul>
       </div>
 
-      {/* 選択中のコース内容 */}
       <div className={styles.course__contents}>
         <ul className={styles.course__contents__list}>
           <li className={styles.course__contents__item}>
             <div
               className={styles.course__contents__item__heading}
-              style={{ background: selectedCourse.gradient }} // ✅ グラデーション適用
+              style={{ background: selectedCourse.gradient }}
             >
               <p>{selectedCourse.title}</p>
             </div>

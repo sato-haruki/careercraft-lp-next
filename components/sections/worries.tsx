@@ -4,8 +4,7 @@ import styles from "./worries.module.scss";
 export default function Worries() {
 
   return (
-    <>
-      <section className={styles.worries}>
+      <section className={styles.worries} id="worries">
         <div className={styles.worries__before}>
             <h2 className={styles.worries__before__heading}>
                 <span className={styles.worries__before__heading__text1}>こんな</span>
@@ -57,6 +56,5 @@ export default function Worries() {
             />
         </div>
       </section>
-    </>
   );
 }
