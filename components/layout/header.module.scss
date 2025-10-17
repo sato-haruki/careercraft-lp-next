@@ -27,8 +27,7 @@
 }
   
 .header__title__text {
-  margin: 8px 0 0 2px;
-  width: 190px;
+  margin: 8px 0 0 4px;
   height: 38px;
   font-size: 34px;
   background: linear-gradient(
@@ -47,12 +46,18 @@
   letter-spacing: 0;
   line-height: normal;
   white-space: nowrap;
+  @media screen and (max-width: 475px) {
+    font-size: 28px;
+  }
 }
   
 .header__title img {
   display: block;
   width: 54px;
   height: 100%;
+  @media screen and (max-width: 475px) {
+    width: 40px;
+  }
 }
 
 .header__nav {
@@ -97,6 +102,10 @@
 .header__hamburger {
   width: 48px;
   height: 100%;
+  cursor: pointer;
+  @media screen and (max-width: 475px) {
+    width: 36px;
+  }
 }
 
 .hamburger {

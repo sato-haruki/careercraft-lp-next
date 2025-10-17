@@ -47,7 +47,9 @@
             align-items: center;
             min-height: 42px;
             background-color: #ffffff;
+            color: #000000;
             transition: background-color 0.3s ease;
+            cursor: pointer;
             @media screen and (max-width: 475px) {
                 font-size: 14px;
                 padding: 0 4px 0 0;
