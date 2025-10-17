@@ -13,12 +13,32 @@ export default function Worries() {
             </h2>
             <div className={styles.worries__before__comments}>
                 <div className={styles.worries__before__comments__group1}>
-                    <p className={`${styles.worries__before__comments__group1__comment1} ${styles.worries__before__comment}`}>副業を始めたいけど<br/>何から学べばいいか分からない</p>
-                    <p className={`${styles.worries__before__comments__group1__comment2} ${styles.worries__before__comment}`}>独学で学んでも<br/>挫折してしまう</p>
+                    <p className={`${styles.worries__before__comments__group1__comment1} ${styles.worries__before__comment}`}>
+                        <span className={styles.ellipse1}></span>
+                        <span className={styles.ellipse2}></span>
+                        <span className={styles.ellipse3}></span>
+                        副業を始めたいけど<br/>何から学べばいいか分からない
+                    </p>
+                    <p className={`${styles.worries__before__comments__group1__comment2} ${styles.worries__before__comment}`}>
+                        <span className={styles.ellipse1}></span>
+                        <span className={styles.ellipse2}></span>
+                        <span className={styles.ellipse3}></span>
+                        独学で学んでも<br/>挫折してしまう
+                    </p>
                 </div>
                 <div className={styles.worries__before__comments__group2}>
-                    <p className={`${styles.worries__before__comments__group2__comment3} ${styles.worries__before__comment}`}>本業で成果につながる<br/>学び方がわからない</p>
-                    <p className={`${styles.worries__before__comments__group2__comment4} ${styles.worries__before__comment}`}>忙しくてまとまった<br/>勉強時間が確保できない</p>
+                    <p className={`${styles.worries__before__comments__group2__comment3} ${styles.worries__before__comment}`}>
+                        <span className={styles.ellipse1}></span>
+                        <span className={styles.ellipse2}></span>
+                        <span className={styles.ellipse3}></span>
+                        本業で成果につながる<br/>学び方がわからない
+                    </p>
+                    <p className={`${styles.worries__before__comments__group2__comment4} ${styles.worries__before__comment}`}>
+                        <span className={styles.ellipse1}></span>
+                        <span className={styles.ellipse2}></span>
+                        <span className={styles.ellipse3}></span>
+                        忙しくてまとまった<br/>勉強時間が確保できない
+                    </p>
                 </div>
             </div>
             <Image
