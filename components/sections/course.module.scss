@@ -9,18 +9,34 @@
       font-weight: 600;
       color: #ffffff;
       background: linear-gradient(39deg, rgba(12, 92, 174, 1) 0%, rgba(71, 185, 159, 1) 100%);
-      height: 136px;
-      line-height: 136px;
+      height: 100px;
+      line-height: 100px;
+      padding: 24px 0 0 0;
+      position: relative;
       @media screen and (max-width: 475px) {
-        font-size: 24px;
-        height: 114px;
-        line-height: 114px;
+        height: 90px;
+        font-size: 28px;
+        line-height: 90px;
+        padding: 14px 0 0 0;
+      }
+
+      &::before {
+        content: "";
+        clip-path: polygon(0 0, 50% 100%, 100% 0);
+        background: linear-gradient(157deg, #0c5cae 0%, #47b99f 100%);
+        width: 100%;
+        max-width: 600px;
+        height: 60px;
+        position: absolute;
+        bottom: -59px;
+        left: 50%;
+        transform: translateX(-50%);
       }
     }
 
     &__select {
         width: 90%;
-        margin: 60px auto 0 auto;
+        margin: 120px auto 0 auto;
     }
 
     &__list {

@@ -3,17 +3,32 @@
   
     &__title {
       text-align: center;
+      color: #fff;
+      background: linear-gradient(39deg, #0c5cae 0%, #47b99f 100%);
+      margin: 0 0 100px;
+      padding: 32px 0 0;
       font-size: 32px;
       font-weight: 600;
-      margin: 0 0 64px 0;
-      color: #ffffff;
-      background: linear-gradient(39deg, rgba(12, 92, 174, 1) 0%, rgba(71, 185, 159, 1) 100%);
-      padding: 20px 0;
       line-height: 44px;
+      position: relative;
       @media screen and (max-width: 475px) {
         font-size: 24px;
         line-height: 34px;
     }
+
+    &::before {
+      content: "";
+      clip-path: polygon(0 0, 50% 100%, 100% 0);
+      background: linear-gradient(157deg, #0c5cae 0%, #47b99f 100%);
+      width: 100%;
+      max-width: 600px;
+      height: 60px;
+      position: absolute;
+      bottom: -59px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    
 
       &__decoration {
         font-size: 54px;
